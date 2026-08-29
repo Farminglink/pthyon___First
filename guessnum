@@ -1,0 +1,48 @@
+import random
+restore = True
+while restore:
+    num = random.randint(1,100)
+    print("-----嗨，这是你的第一次程序尝试-----")
+    temp = input("这是测试数字的复合语句测试:(输入一个阿拉伯数字)")
+    while not temp.isdigit():
+        temp = input("请重新输入阿拉伯数字：")
+    guess = int(temp)
+    i = int(0)
+    while True:
+        i = i + 1
+        if guess == num:
+            print("是的，答案如此");print("可惜，没有奖励");break
+        else:
+            if guess > num:
+                if guess / num > 1.5:
+                    print("大了...在1.5倍以上...")
+                elif guess - num <= 3:
+                    print("大了，但非常非常接近——")
+                elif guess - num <= 10:
+                    print("大了...但在十以内了，加油！")
+                else:
+                    print("大了，但还在合理范围内，继续猜！")  # ← 兜底
+            else:
+                if num / guess > 2:
+                    print("小了...小了一半...")
+                elif num - guess <= 3:
+                    print("小了，但非常非常接近了——")
+                elif num - guess <= 10:
+                    print("小了...但在十以内了,加油!")
+                else:
+                    print("小了，但还在合理范围内，继续猜！")  # ← 兜底
+            if i > 4:
+                print(f"答案是{num}")
+                break
+            else:
+                test = input("重新输入阿拉伯数字：")
+                while not test.isdigit():
+                    test = input("重新输入阿拉伯数字：")
+                guess = int(test)
+    print("测试结束")
+    confirm = input("重新测试请输入:(0/1)")
+    while not confirm.isdigit():
+        confirm = input("检测到非法输入，请输入阿拉伯数字:")
+    if int(confirm) >= 2:
+        print("大于1的阿拉伯数默认为True")
+    restore = int(confirm) != 0
