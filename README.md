@@ -16,6 +16,8 @@
 ## 📂 项目结构
 ```
 ├── basics/   # 基础语法练习
+│   ├── guess_number.py
+│   └── password_strength_checker.py
 ├── data_structure/   # 数据结构相关
 ├── algorithm/   # 算法练习
 ├── projects/   # 小型项目
