@@ -49,4 +49,4 @@ python filename.py
 
 - [python-project-template README 示例](https://github.com/gemmadanks/python-project-template)[reference:4]
 - [Python Package README 最佳实践](https://github.com/stefmolin/python-package-guide)[reference:5]
--[课后作业 -《零基础入门学习Python》系列教程对应课后作业|扩展练习|案例解读|扩展阅读 - Powered by Discuz!](https://fishc.com.cn/forum-243-1.html)
+- [课后作业 -《零基础入门学习Python》系列教程对应课后作业|扩展练习|案例解读|扩展阅读 - Powered by Discuz!](https://fishc.com.cn/forum-243-1.html)
