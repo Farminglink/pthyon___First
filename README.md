@@ -13,7 +13,7 @@
   ```bash
   pip install -r requirements.txt
 ## 📂 项目结构
-.
+. 
 ├── basics/          # 基础语法练习
 ├── data_structure/  # 数据结构相关
 ├── algorithm/       # 算法练习
