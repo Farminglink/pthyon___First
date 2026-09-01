@@ -1,1 +1,52 @@
+# 🐍 Python 练习代码仓库
 
+> 个人 Python 学习与练习代码归档
+
+## 📖 项目简介
+
+这个仓库是我学习 Python 过程中的练习代码集合，主要用于记录和巩固所学知识。代码涵盖基础语法、数据结构、算法、第三方库使用等各个方面。
+
+## 🛠 环境要求
+
+- Python 3.x（建议 3.8 及以上）
+- 依赖库（如有）：
+  ```bash
+  pip install -r requirements.txt
+## 📂 项目结构
+.
+├── basics/          # 基础语法练习
+├── data_structure/  # 数据结构相关
+├── algorithm/       # 算法练习
+├── projects/        # 小型项目
+├── utils/           # 通用工具函数
+└── README.md
+## 📋 代码列表
+文件/目录	说明
+basics/	变量、循环、函数、类等基础语法练习
+data_structure/	列表、字典、集合、元组等操作练习
+algorithm/	排序、查找、递归等算法实现
+projects/	完整的小项目，如爬虫、数据分析等
+## 🚀 如何使用
+克隆仓库到本地：
+git clone https://github.com/Farminglink/pthyon___First.git
+进入对应目录，直接运行 Python 文件：
+python filename.py
+## 📚 学习进度
+☑ Python 基础语法
+☑ 数据类型与结构
+□ 面向对象编程
+□ 文件与异常处理
+□ 常用第三方库
+□ 小型项目实战
+## 🤝 贡献
+本仓库为个人学习使用，暂不接受外部贡献。如有建议，欢迎提 Issue 交流。
+## 📄 许可证
+本项目仅供学习使用，无特定许可证。
+
+---
+
+### 📚 参考资料
+
+- [python-project-template README 示例](https://github.com/gemmadanks/python-project-template)[reference:4]
+- [Python Package README 最佳实践](https://github.com/stefmolin/python-package-guide)[reference:5]
+-[课后作业 -《零基础入门学习Python》系列教程对应课后作业|扩展练习|案例解读|扩展阅读 - Powered by Discuz!](https://fishc.com.cn/forum-243-1.html)
