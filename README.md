@@ -37,7 +37,7 @@ git clone https://github.com/Farminglink/pthyon___First.git
 ```
 进入对应目录，直接运行 Python 文件：
 ```
-python filename.py
+python example_file_name.py
 ```
 ## 📚 学习进度
 ☑ Python 基础语法
