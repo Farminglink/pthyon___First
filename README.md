@@ -15,13 +15,13 @@
   ```
 ## 📂 项目结构
 ```
-├── basics/   # 基础语法练习
-│   ├── guess_number.py
-│   └── password_strength_checker.py
-├── data_structure/   # 数据结构相关
-├── algorithm/   # 算法练习
-├── projects/   # 小型项目
-├── utils/   # 通用工具函数
+├── basics/                # 基础语法练习
+│   ├── guess_number.py    #基础语法练习1.猜数字程序
+│   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
+├── data_structure/        # 数据结构相关
+├── algorithm/             # 算法练习
+├── projects/              # 小型项目
+├── utils/                 # 通用工具函数
 └── README.md
 ```
 ## 📋 代码列表
