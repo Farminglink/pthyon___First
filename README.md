@@ -10,8 +10,9 @@
 
 - Python 3.x（建议 3.8 及以上）
 - 依赖库（如有）：
-  ```bash
+  ```
   pip install -r requirements.txt
+  ```
 ## 📂 项目结构
 . 
 ├── basics/          # 基础语法练习
@@ -28,9 +29,13 @@ algorithm/	排序、查找、递归等算法实现
 projects/	完整的小项目，如爬虫、数据分析等
 ## 🚀 如何使用
 克隆仓库到本地：
+```
 git clone https://github.com/Farminglink/pthyon___First.git
+```
 进入对应目录，直接运行 Python 文件：
+```
 python filename.py
+```
 ## 📚 学习进度
 ☑ Python 基础语法
 ☑ 数据类型与结构
