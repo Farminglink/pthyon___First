@@ -14,14 +14,14 @@
   pip install -r requirements.txt
   ```
 ## 📂 项目结构
-"""
+```
 ├── basics/   # 基础语法练习
 ├── data_structure/   # 数据结构相关
 ├── algorithm/   # 算法练习
 ├── projects/   # 小型项目
 ├── utils/   # 通用工具函数
 └── README.md
-"""
+```
 ## 📋 代码列表
 文件/目录	说明
 basics/	变量、循环、函数、类等基础语法练习
