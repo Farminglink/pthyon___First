@@ -28,3 +28,27 @@
 ---
 
 ## 🗂️ 代码结构
+.
+├── week01_基础语法
+│ ├── hello.py
+│ └── loop_demo.py
+├── week02_数据结构
+│ ├── list_ops.py
+│ └── dict_ops.py
+├── week03_文件操作
+│ ├── read_file.py
+│ └── write_csv.py
+├── ...
+└── README.md # 你正在看的这个文件
+
+text
+
+每周一个独立文件夹，命名清晰，方便回溯。
+
+---
+
+## 🚀 如何运行
+
+1. 克隆本仓库：
+   ```bash
+   git clone https://github.com/你的用户名/你的仓库名.git
