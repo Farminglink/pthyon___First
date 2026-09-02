@@ -40,12 +40,14 @@ git clone https://github.com/Farminglink/pthyon___First.git
 python example_file_name.py
 ```
 ## 📚 学习进度
+```
 ☑ Python 基础语法
 ☑ 数据类型与结构
 □ 面向对象编程
 □ 文件与异常处理
 □ 常用第三方库
 □ 小型项目实战
+```
 ## 🤝 贡献
 本仓库为个人学习使用，暂不接受外部贡献。如有建议，欢迎提 Issue 交流。
 ## 📄 许可证
