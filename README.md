@@ -15,6 +15,7 @@
   ```
 ## 📂 项目结构
 ```
+python__First
 ├── basics/                # 基础语法练习
 │   ├── guess_number.py    #基础语法练习1.猜数字程序
 │   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
