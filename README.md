@@ -20,6 +20,7 @@
 │   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
 ├── data_structure/        # 数据结构相关
 ├── algorithm/             # 算法练习
+│   ├── S1E6.py
 │   └── S1E5.py            # 第一学期练习程序：
 ├── projects/              # 小型项目
 ├── utils/                 # 通用工具函数
