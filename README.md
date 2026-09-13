@@ -1,4 +1,4 @@
-# 🐍 Python 练习代码仓库
+-# 🐍 Python 练习代码仓库
 
 > 个人 Python 学习与练习代码归档
 
@@ -18,6 +18,12 @@
 python__First
 ├── basics/                # 基础语法练习
 │   ├── BaiduStar_01_Discount.py        #百度之星测试题其3
+│   ├── S1E17.py
+│   ├── S1E18.py
+│   ├── S1E19.py
+│   ├── S1E20.py
+│   ├── S1E21.py
+│   ├── Word_Count.py                   #字符串统计
 │   ├── control_flow_exercises.py       #控制流语法练习
 │   ├── guess_number.py                 #基础语法练习1.猜数字程序
 │   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
@@ -30,6 +36,8 @@ python__First
 ├── algorithm/             # 算法练习
 │   ├── S1E14.py
 │   ├── S1E15.py
+│   ├── S1E22.py
+│   ├── S1E23_24.py
 │   ├── S1E6.py
 │   └── S1E5.py                    # 第一学期练习程序由S1开头
 ├── projects/              # 小型项目
