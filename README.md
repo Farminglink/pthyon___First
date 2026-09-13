@@ -17,6 +17,7 @@
 ```
 python__First
 ├── basics/                # 基础语法练习
+│   ├── BaiduStar_01_Discount.py        #百度之星测试题其3
 │   ├── control_flow_exercises.py       #控制流语法练习
 │   ├── guess_number.py    #基础语法练习1.猜数字程序
 │   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
