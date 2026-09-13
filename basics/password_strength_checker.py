@@ -25,7 +25,7 @@ has_upper = any(c.isupper() for c in password)    #检验大写
 has_renum = bool(re.search(r'\d{3,}',password))         #检验数字是否连续
 has_realp = bool(re.search(r'[a-zA-Z]{3,}',password))   #检验字母是否连续
 has_digit = any(c.isdigit() for c in password)
-has_symbol = any(c in symbols for c in password)    #检验是否存在特殊符合
+has_symbol = any(c in symbols for c in password)    #检验是否存在特殊符号
 
 sum_safty = sum([has_alpha,has_digit,has_symbol])   #计算三者是否同时存在与否
 
