@@ -37,6 +37,7 @@ python__First
 │   ├── S1E15.py
 │   ├── S1E22.py
 │   ├── S1E23_24.py
+│   ├── S1E25.py
 │   ├── S1E6.py
 │   └── S1E5.py                    # 第一学期练习程序由S1开头
 ├── projects/              # 小型项目
