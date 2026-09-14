@@ -70,53 +70,6 @@ https://xxx.ilovefishc.com/forum/201403/21/003109a474un0hb4caqqt4.png
 """
 
 contacts = {}
-while True:
-    order = int(input("请输入相关指令代码："))
-    if order == 1:
-        print("|--- 您正在使用查询功能 ---|")
-        
-        temp_name = input("请输入联系人姓名：")
-        if temp_name in contacts:
-            print(temp_name+' '+contacts[temp_name])
-        else:
-            temp = input("未查找到该联系人，是否录入？（Yes/No）")
-            if temp == 'Yes':
-                temp_name = input("请输入联系人姓名：")
-                temp_phone_number = input("请输入用户联系电话：")
-                contacts[temp_name] = temp_phone_number
-        print()
-    elif order == 2:
-        print("|--- 您正在使用插入功能 ---|")
-        
-        temp_name = input("请输入联系人姓名：")
-        
-        if temp_name in contacts:
-            print("您输入的姓名在通讯录中已存在 -->>"+contacts[temp_name])
-            temp = input("是否修改用户资料(Yes/No)：")
-            if temp == 'Yes':
-                temp_phone_number = input("请输入用户联系电话：")
-                contacts[temp_name] = temp_phone_number
-        else:
-            temp_phone_number = input("请输入用户联系电话：")
-            contacts[temp_name] = temp_phone_number
-
-        print()
-    elif order == 3:
-        print("|--- 您正在使用删除功能 ---|")
-        temp_name = input("请输入联系人姓名：")
-        if temp_name in contacts:
-            del contacts[temp_name]
-        else:
-            print("联系人不存在")
-
-        print()
-    elif order == 4:
-        print("|--- 感谢使用本通讯录程序 ---|")
-        break
-    else:
-        print("程序错误")
-        print()
-ebbrowser.open("https://xxx.ilovefishc.com/forum/201403/21/003109a474un0hb4caqqt4.png")
 
 print("""
 |--- 欢迎进入通讯录程序 ---|
@@ -125,52 +78,60 @@ print("""
 |--- 3：删除已有联系人  ---|
 |--- 4：退出通讯录程序  ---|
 """)
-print()
 
-contacts = {}
 while True:
-    order = int(input("请输入相关指令代码："))
+    try:
+        order = int(input("请输入相关指令代码："))
+    except ValueError:
+        print("请输入数字指令（1-4）\n")
+        continue
+
     if order == 1:
         print("|--- 您正在使用查询功能 ---|")
-        
         temp_name = input("请输入联系人姓名：")
+
         if temp_name in contacts:
-            print(temp_name+' '+contacts[temp_name])
+            print(f"{temp_name} {contacts[temp_name]}")
         else:
             temp = input("未查找到该联系人，是否录入？（Yes/No）")
-            if temp == 'Yes':
-                temp_name = input("请输入联系人姓名：")
+            if temp.lower() == "yes":
                 temp_phone_number = input("请输入用户联系电话：")
                 contacts[temp_name] = temp_phone_number
+                print("录入成功")
         print()
+
     elif order == 2:
         print("|--- 您正在使用插入功能 ---|")
-        
         temp_name = input("请输入联系人姓名：")
-        
+
         if temp_name in contacts:
-            print("您输入的姓名在通讯录中已存在 -->>"+contacts[temp_name])
+            print(f"您输入的姓名在通讯录中已存在 -->> {contacts[temp_name]}")
             temp = input("是否修改用户资料(Yes/No)：")
-            if temp == 'Yes':
+            if temp.lower() == "yes":
                 temp_phone_number = input("请输入用户联系电话：")
                 contacts[temp_name] = temp_phone_number
+                print("修改成功")
         else:
             temp_phone_number = input("请输入用户联系电话：")
             contacts[temp_name] = temp_phone_number
-
+            print("插入成功")
         print()
+
     elif order == 3:
         print("|--- 您正在使用删除功能 ---|")
         temp_name = input("请输入联系人姓名：")
+
         if temp_name in contacts:
             del contacts[temp_name]
+            print("删除成功")
         else:
             print("联系人不存在")
-
         print()
+
     elif order == 4:
         print("|--- 感谢使用本通讯录程序 ---|")
         break
+
     else:
-        print("程序错误")
+        print("程序错误，请输入 1-4 之间的数字")
         print()
