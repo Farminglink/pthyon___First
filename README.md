@@ -18,11 +18,21 @@
 python__First
 ├── basics/                # 基础语法练习
 │   ├── BaiduStar_01_Discount.py        #百度之星测试题其3
+│   ├── OpenMe.mp3
+│   ├── Openme.txt
 │   ├── S1E17.py
 │   ├── S1E18.py
 │   ├── S1E19.py
 │   ├── S1E20.py
 │   ├── S1E21.py
+│   ├── S1E27.py
+│   ├── S1E28.py
+│   ├── S1E29_0.py
+│   ├── S1E29_1.py
+│   ├── S1E29_2.py
+│   ├── S1E29_3.py
+│   ├── S1E29_4.py
+│   ├── address_book.py
 │   ├── control_flow_exercises.py       #控制流语法练习
 │   ├── guess_number.py                 #基础语法练习1.猜数字程序
 │   └── password_strength_checker.py    #基础语法练习2.密码安全性测试程序
