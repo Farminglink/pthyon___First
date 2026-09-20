@@ -41,7 +41,8 @@ python__First
 │   ├── S1E6.py
 │   └── S1E5.py                    # 第一学期练习程序由S1开头
 ├── projects/              # 小型项目
-│   └── Word_Count.py               #字符串统计
+│   ├── Word_Count.py               #字符串统计
+│   └── list_driver.py              #文件目录扫描
 ├── utils/                 # 通用工具函数
 └── README.md
 ```
