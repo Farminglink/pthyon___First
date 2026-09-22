@@ -32,6 +32,8 @@ python__First
 │   ├── S1E29_2.py
 │   ├── S1E29_3.py
 │   ├── S1E29_4.py
+│   ├── S1E30_0.py
+│   ├── S1E30_1.py
 │   ├── address_book.py                 #函数封装的基础练习
 │   ├── control_flow_exercises.py       #控制流语法练习
 │   ├── guess_number.py                 #基础语法练习1.猜数字程序
@@ -52,7 +54,8 @@ python__First
 │   └── S1E5.py                    # 第一学期练习程序由S1开头
 ├── projects/              # 小型项目
 │   ├── Word_Count.py               #字符串统计
-│   └── list_driver.py              #文件目录扫描
+│   ├── list_driver.py              #文件目录扫描
+│   └── rename_demo.py              #文件名字批量更改
 ├── utils/                 # 通用工具函数
 └── README.md
 ```
