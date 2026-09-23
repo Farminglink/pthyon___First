@@ -27,9 +27,6 @@ python__First
 │   ├── BaiduStar_01_Discount.py        #百度之星测试题其3
 │   ├── OpenMe.mp3
 │   ├── Openme.txt
-│   ├── S1E17.py
-│   ├── S1E18.py
-│   ├── S1E19.py
 │   ├── S1E20.py
 │   ├── S1E21.py
 │   ├── S1E27.py
