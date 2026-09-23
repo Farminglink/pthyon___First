@@ -17,6 +17,13 @@
 ```
 python__First
 ├── basics/                # 基础语法练习
+│   ├── FishC_Test
+│   │       ├── S1E17.py
+│   │       ├── S1E18.py
+│   │       ├── S1E19.py
+│   │       └── S1E30_1.py
+│   ├── Test
+│   │     └── S1midterm.txt
 │   ├── BaiduStar_01_Discount.py        #百度之星测试题其3
 │   ├── OpenMe.mp3
 │   ├── Openme.txt
