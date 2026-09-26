@@ -1,12 +1,10 @@
-import numpy as np
+import math
 
 # 实验参数设置
 d = 0.5 / 100  # 挡光片宽度，转换为米 (0.005m)
 s = 50.0 / 100 # 两个光电门之间的距离，转换为米 (0.5m)
 
 # 原始时间数据 (单位：ms)
-# 格式：[第一组, 第二组, 第三组, 第四组, 第五组]
-# 每组内部格式：[光电门1第一次, 光电门1第二次, 光电门2第一次, 光电门2第二次]
 raw_data = {
     "垫一个垫块": [
         [75.97, 69.00, 37.57, 36.70],
@@ -37,26 +35,6 @@ raw_data = {
     ]
 }
 
-def calculate_acceleration(times_ms):
-    """根据时间数据(ms)计算加速度(m/s^2)"""
-    # 将时间转换为秒
-    t1, t2 = times_ms[0] / 1000, times_ms[1] / 1000
-    t3, t4 = times_ms[2] / 1000, times_ms[3] / 1000
-    
-    # 计算经过两个光电门的瞬时速度 (v = d / t)
-    v1 = d / t1
-    v2 = d / t2
-    v3 = d / t3
-    v4 = d / t4
-    
-    # 计算两次测量的加速度 (a = (v2^2 - v1^2) / 2s)
-    a1 = (v2**2 - v1**2) / (2 * s)
-    a2 = (v4**2 - v3**2) / (2 * s)
-    
-    # 返回两次测量的平均值
-    return (a1 + a2) / 2
-
-# 遍历并计算所有数据
 print(f"{'实验组别':<15} | {'第1次 a (m/s²)':<15} | {'第2次 a (m/s²)':<15} | {'平均 a (m/s²)':<15}")
 print("-" * 75)
 
@@ -65,20 +43,22 @@ for group_name, trials in raw_data.items():
     group_accelerations = []
     
     for i, times in enumerate(trials):
-        t1, t2, t3, t4 = [t / 1000 for t in times] # 转换为秒
+        # 将时间转换为秒
+        t1, t2, t3, t4 = [t / 1000 for t in times]
         
-        # 计算速度
+        # 计算经过两个光电门的瞬时速度 (v = d / t)
         v1, v2 = d / t1, d / t2
         v3, v4 = d / t3, d / t4
         
-        # 计算加速度
-        a1 = (v2**2 - v1**2) / (2 * s)
-        a2 = (v4**2 - v3**2) / (2 * s)
+        # 计算加速度 (a = (v2^2 - v1^2) / 2s)，用 math.pow 替代 ** 运算符
+        a1 = (math.pow(v2, 2) - math.pow(v1, 2)) / (2 * s)
+        a2 = (math.pow(v4, 2) - math.pow(v3, 2)) / (2 * s)
         avg_a = (a1 + a2) / 2
         
         group_accelerations.append(avg_a)
         print(f"第{i+1}次实验: {a1:.4f}        {a2:.4f}        {avg_a:.4f}")
         
-    overall_avg = np.mean(group_accelerations)
+    # 使用 Python 内置的 sum() 和 len() 计算平均值，替代 numpy.mean
+    overall_avg = sum(group_accelerations) / len(group_accelerations)
     print(f"👉 {group_name} 的最终平均加速度 a = {overall_avg:.4f} m/s²")
     print("-" * 30)
